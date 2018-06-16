@@ -1,8 +1,15 @@
+# JLB Support Theme
 
-### Open git bash
-npm init -y && npm install gulp && npm install gulp-sass gulp-autoprefixer browser-sync gulp-eslint gulp-concat gulp-uglify gulp-babel babel-core eslint-config-google
+Hey team, this template can be used to create all of the landing pages! It allows for the use of Sass and the latest ES6 scripts syntax. It compiles and minifies the CSS and JavaScript for you and allows for auto-updating.
 
+### Prerequisites
 
-Udacity Front-End Development Coursework Helpful Courses
+`node -v` && `npm -v`
 
-Section 3: Lesson 14-20.
+### Startup
+
+1. download and open git bash
+2. `git clone https://cmdev_jlb@bitbucket.org/cmdev_jlb/supportisevolving.git **projectName/**`
+3. `cd **projectName**/`
+4. `npm init -y && npm install gulp && npm install gulp-sass gulp-autoprefixer browser-sync gulp-eslint gulp-concat gulp-uglify gulp-babel babel-core eslint-config-google`
+5. `gulp`
