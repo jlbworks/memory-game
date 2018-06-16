@@ -1,6 +1,6 @@
 
 ### Open git bash
-npm install gulp && npm install gulp-sass gulp-autoprefixer browser-sync gulp-eslint gulp-concat gulp-uglify gulp-babel babel-core
+npm init -y && npm install gulp && npm install gulp-sass gulp-autoprefixer browser-sync gulp-eslint gulp-concat gulp-uglify gulp-babel babel-core eslint-config-google
 
 
 Udacity Front-End Development Coursework Helpful Courses
