@@ -7,17 +7,19 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');
 var rename = require('gulp-rename');
+var notify = require('gulp-notify');
 
 // default when you run gulp
 gulp.task('default', ['styles', 'scripts', 'lint'], function() {
+  console.log('What? SUPPORT is evolving!');
   gulp.watch('sass/**/*.sass', ['styles']);
   gulp.watch('js/**/*.js', ['lint']);
   gulp.watch('./index.html').on('change', browserSync.reload);
   browserSync.init({
-    server: "./"
+    server: './',
+    open: false,
+    logPrefix: 'JLB Support'
   });
-
-  console.log('Hi Support Team! You\'re awesome.');
 });
 
 // sass task
