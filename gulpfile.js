@@ -44,7 +44,9 @@ gulp.task('styles', function() {
 // scripts task including es6 syntax
 gulp.task('scripts', function() {
   gulp.src('js/**/*.js')
-    .pipe(babel())
+    .pipe(babel({
+      presets: ['env']
+    }))
     .pipe(uglify())
     .pipe(rename({
       basename: 'scripts',
