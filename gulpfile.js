@@ -7,7 +7,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');
 var rename = require('gulp-rename');
-var notify = require('gulp-notify');
 
 // default when you run gulp
 gulp.task('default', ['styles', 'scripts', 'lint'], function() {
@@ -38,7 +37,7 @@ gulp.task('styles', function() {
       basename: 'styles',
       extname: '.min.css'
     }))
-    .pipe(gulp.dest('./css/'))
+    .pipe(gulp.dest('./minified/'))
     .pipe(browserSync.stream());
 });
 
@@ -46,7 +45,12 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
   gulp.src('js/**/*.js')
     .pipe(babel())
-    .pipe(uglify());
+    .pipe(uglify())
+    .pipe(rename({
+      basename: 'scripts',
+      extname: '.min.js'
+    }))
+    .pipe(gulp.dest('./minified/'));
 });
 
 // lint task to check syntax
