@@ -24,13 +24,34 @@
   <body class="jlb-landing-page">
 
     <main class="body-container">
+      <section class="wrapper j-center stats">
+        <div class="timer">
+          <h4>Time: <span id="time">30</span></h4>
+        </div>
+        <div class="moves">
+          <h4>Moves: <span id="moveCounter">0</span></h4>
+        </div>
+        <div class="buttons">
+          <button class="reset">
+            New Game
+          </button>
+        </div>
 
-      <!-- Remember to use HTML5 elements for best practice! ie - section, article, aside, nav, header, footer, etc -->
-      <section class="wrapper">
-        <h1 id="welcome">You've got this!</h1>
-        <p>( i believe in you )</p>
       </section>
+      <section class="wrapper j-center card-holder">
 
+      </section>
+      <section class="you-win">
+        <h4>You Win, Congrats!</h4>
+        <h6>Time Used: <span id="tr"></span> seconds</h6>
+        <div class="rating">
+        </div>
+        <button class="close-modal">New Game</button>
+      </section>
+      <section class="you-lose">
+        <h4>You Lose, Congrats!</h4>
+        <button class="close-modal">New Game</button>
+      </section>
     </main>
 
   </body>
