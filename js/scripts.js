@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 	///////////////////////////////////
 	// Fisher-Yates (aka Knuth) Shuffle
-	// https://github.com/Daplie/knuth-shuffle/blob/master/index.js
+	// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 	///////////////////////////////////
 	function shuffle(array) {
 		let currentIndex = array.length, temporaryValue, randomIndex;
